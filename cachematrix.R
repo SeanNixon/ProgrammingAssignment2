@@ -1,7 +1,13 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Create a pair of function to store a matrix x and its inverse xInv 
 
-## Write a short comment describing this function
+
+## This function creates a list with the following four functions
+#     setMatrix(x):     Caches the matrix x and clears any saved inverse.
+#     getMatrix():      The matrix x is saved in this function to be retrieved later
+#     setInv():         Caches the inverse matrix as xInv
+#     getInv():         Calls the set inverse matrix, xInv.
+## This List can then be used in place of x. 
+
 
 makeCacheMatrix <- function(x = matrix()) {
       ## This function creates a list with the following four functions
@@ -27,7 +33,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function calculates and returns the inverse of the saved matrix x.
 
 cacheSolve <- function(mCM) {
       ## This function calculates and returns the inverse of the saved matrix x.
